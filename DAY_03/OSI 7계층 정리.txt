@@ -1,0 +1,19 @@
+1. 물리 계층
+   역할 : 장치간 물리적 연결
+   약속 : 디지털 신호 전달
+   장치 : 케이블, 리피터, 허브
+
+2. 데이터 링크 계층
+   역할 : 장치간(Point-to-Point) 데이터 운송방식
+   약속 : LAN(Ethernet), WAN(HDLC, PPP)
+   장치 : L2 SWITCH
+
+3. 네트워크 계층
+   역할 : 경로 탐색
+   약속 : IP, ICMP, ARP, Routing Protocol
+   장치 : 라우터
+
+4. 전송 계층
+   역할 : 종단간(송수신지 사이, End-to-End) 데이터의 신뢰성 보장
+   약속 : TCP/UDP
+   장치 : L4 SWITCH(로드밸런서)
