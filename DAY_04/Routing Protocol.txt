@@ -1,0 +1,31 @@
+ROUTING PROTOCOL
+	통신용 프로그램
+
+
+
+정적 라우팅 프로토콜
+	패킷의 경로를 수동으로 설정
+	네트워크의 변화에 민감하게 대응 X
+	static - 단일 목적지
+	default - 나머지 모든 목적지
+
+
+
+Server
+  - 제공할 수 있는 주체
+
+Client
+  - ~를 요구하는 주체
+
+Server - 하드웨어
+Service - 소프트웨어
+
+
+Service
+
+	DNS
+	DN : www.naver.com - IP 223.130.200.236
+	      문자 주소와 숫자 주소를 같이 저장
+
+	HTTP(Hyper Text Transfer Protocol)
+	하이퍼 텍스트형 문서파일을 전달하기 위해 사용되는 네트워크 프로토콜
