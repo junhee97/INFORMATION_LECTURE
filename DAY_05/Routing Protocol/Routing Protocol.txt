@@ -1,0 +1,35 @@
+ROUTING PROTOCOL
+	통신용 프로그램
+
+  Route : 경로
+  Router : 경로 안내 장치
+  Routing : 경로 안내 작업
+  Protocol : 통신을 위한 프로그램
+
+
+
+
+동적 라우팅 프로토콜(DYnamic Routing Protocol)
+
+
+						DISTANCE VECTOR : RIPv2
+		IGP(Interior Gateway Protocol)
+						LINK - STATE : OSPF
+	      내부
+	AS
+	      외부
+
+		EGP(Exterior Gateway Protocol) 	BGP
+
+
+
+AS(Autonomous System) : 자치 시스템(관리자에 의해 관리되는 라우터의 집합/집단)
+
+ASBR(AS Boundary Router) : AS 가장자리에서 다른 AS를 연결할 때 사용되는 라우터
+
+
+
+Distance Vector : RIPv2
+  전체 네트워크 학습 -> 최적 경로 산출
+  Hop Count 제한
+  15Hop 까지 유효

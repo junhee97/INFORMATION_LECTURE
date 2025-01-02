@@ -1,0 +1,30 @@
+미들웨어
+
+
+
+ware : 제품
+
+hardware : 부품(CPU, RAM, DISK ...)
+
+software : hardware 자원을 이용해서 특정 목적달성을 위해 사용되는 컴퓨터 프로그램
+
+
+	System Software(Operating System) : hardware 자원을 관리 / Application 관리 / file 관리 / ...
+
+	Application : 사용자의 요구사항을 만족하는 프로그램
+
+
+
+jdk 설치
+   실행 -> sysdm.cpl -> 고급 -> 환경 변수 -> 시스템 변수 path -> 편집 -> 새로 만들기 -> bin 폴더 주소 -> 위로 이동
+
+이클립스 설치
+   window -> preperance -> general -> workspace -> text file encoding -> utf-8
+   files  -> css files -> utf-8
+	 html files -> utf-8
+	 jsp files -> utf-8
+  톰캣 연결
+  file -> new -> other -> server -> apache -> tomcat v9.0 -> 톰캣 설치 경로
+  servers -> port 설정(admin : 8091, http : 8090)
+톰캣 설치
+   services.msc
