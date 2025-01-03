@@ -1,0 +1,58 @@
+데이터베이스(Database)
+   데이터의 집합
+
+
+
+DBMS(Database Management System)
+   데이터를 관리하고 운영하는 소프트웨어
+   종류 : MySQL, Oracle, SQL 서버, MariaDB, ...
+   유형 : 계층형, 망형, 관계형, 객체지향형, 객체관계형, ....
+
+
+
+관계형DBMS(RDBMS)
+   대부분의 DBMS가 RDBMS 형태로 사용
+
+
+
+DDL(Data Definition Language)
+  CREATE : 데이터베이스, 테이블 등을 생성
+  ALTER : 테이블을 수정
+  DROP : 데이터베이스, 테이블을 삭제
+  TRUNCATE : 테이블을 초기화
+
+
+DML(Date Manipulation Language)
+  SELECT : 데이터 조회
+  INSERT : 데이터 삽입
+  UPDATE : 데이터 수정
+  DELETE : 데이터 삭제
+
+DCL(Data Control Language)
+  GRANT : 특정 데이터베이스 사용자에게 특정 작업에 대한 수행 권한을 부여
+  REVOKE : 특정 데이터베이스 사용자에게 특정 작업에 대한 수행 권한을 박탈, 회수
+  COMMIT : 트랜잭션의 작업을 저장
+  ROLLBACK : 트랜잭션의 작업을 취소, 원래대로 복구
+
+
+
+Information_schema	: 메타데이터 제공, 데이터베이스 정보제공(테이블, 열, 인덱스, ...)
+Performance_schema	: 시스템 성능 관련정보 제공(쿼리성능, 서버리소스 사용현황, 대기중인 이벤트, ...)
+mysql			: 인증정보(사용자 정보, 권한정보, ...)
+sys			: Performance_schema, Information_schema의 분석을 돕기위해 만들어진 DB(여러 View 포함)
+
+
+
+PRIMARY KEY	: 유일값, NOTNULL
+
+
+table 생성	: create table 테이블명 ( 컬럼명 자료형 제약조건 ) ;
+column 추가	: alter table 테이블명 add column 컬럼명 자료형 제약조건 ;
+column 수정	: alter table 테이블명 change column 기존컬럼명 변경컬럼명 변경자료형 제약조건 ;
+column 삭제	: alter table 테이블명 drop 컬럼명 ;
+
+
+삽입	: insert into 테이블명(열1,열2...) values(값1,값2...) ;
+수정	: update 테이블명 set 열이름=값,열이름=값 where 열이름=값 ;
+삭제	: delete from 테이블명 where 열이름=값 ;
+조회	: select * from 테이블명 ;
