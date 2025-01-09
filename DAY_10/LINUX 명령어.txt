@@ -1,0 +1,89 @@
+ls : 파일 & 디렉토리 목록 출력 명령어
+
+ 옵션
+  -a : 모두보기
+  -l : 자세히 보기(파일유형, 권한, 연결파일, 허가권, ...)
+  -R : 하위까지 보기
+  -d : 다릭토리 보기
+
+  명령어와 옵션은 조합이 가능
+
+
+mkdir : 디렉토리 생성 명령어
+	mkdir /디렉토리명
+ 옵션
+  -p : 상위 디렉토리 포함 생성
+
+
+man : 명령어 정보 확인
+
+
+touch : 파일생성, 파일의 시간 변경
+	touch /폴더위치/파일이름
+ 옵션
+  -d 00:00 : (date time) 시간
+  -t YYYYMMDDHHmmss
+
+
+cp : 파일 복사 명령어
+	cp /원본폴더/원본파일명 /이동할폴더/이동할파일명(생략가능)
+ 옵션
+  -i : 질의
+  -p : 보존 복사(속성까지 복사)
+  -r : 디렉토리 복사
+
+
+mv : 파일 디렉토리 이동 명령어(옵션x)
+	mv /원본폴더/원본파일명 /이동할폴더/이동할파일명(생략가능)
+
+
+rm : 파일&디렉토리 삭제 명령어
+	rm /폴더/파일
+ 옵션
+  -f : 강제 삭제
+  -r : 디렉토리 삭제
+  -i : 질의(y/n) - 기본으로 설정
+
+
+cat : 문서 전체 출력
+	cat /폴더/파일
+ 옵션
+  -n : 행번호 출력
+
+
+head & tail : 위 & 아래에서 시작해서(기본 10줄) 출력
+	head /폴더/파일
+	tail /폴더/파일
+ 옵션
+  -숫자 : 지정된 숫자 줄수만큼 출력
+
+
+
+more : 화면 크기만큼 출력
+	more /폴더/파일
+
+
+1.
+ls /etc/login.defs
+ls /etc/passwd
+ls /boot/grub2/grub.cfg
+mkdir /backup
+cp /etc/login.defs /etc/passwd /boot/grub2/grub.cfg /backup
+
+2.
+mkdir /backup/test
+cd /backup
+cp /login.defs test/login
+cp /passwd test/pass
+cp /grub.cfg test/grub
+
+3.
+touch /backup/test1 /backup/test/test2
+
+4.
+mkdir /home/test/c/d
+cp -rp /backup/test /home/test/c/d/linux
+
+5.
+cd/home
+cp -p /backup/login.defs /backup/passwd /backup/grub.cfg /backup/test1 /home/test/c/d/linux
