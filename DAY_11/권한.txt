@@ -1,0 +1,92 @@
+★ 권한
+	소유권 - 허가권을 부여할 수 있는 권한
+	           사용자 계정/ 그룹 계정/ 서비스 계정 부여
+
+	허가권 - 자원(파일/디렉토리)에 대한 접근 제한
+
+d rwx r-x r-x.  2 root root      220 10월  2  2020 yum.repos.d
+     허가권         소유권
+		소유한 사용자/ 소유 그룹 계정
+     rwx : 사용자
+     r-x : 그룹 계정
+     r-x : 사용자/그룹 외
+
+     r(read) : 읽기
+     w(write) : 쓰기
+     x(execute) : 실행
+
+	파일					디렉토리(폴더)
+	r(문서내용 보기) : cat, head, tail, more, ...	r(폴더 내 목록보기) : ls
+	w(문서내용 수정) : vi, >(리다이렉션)		w(폴더 내 생성, 수정, 삭제) : mkdir, touch, cp, mv, rm, ...
+	x(실행파일 동작) : ./filename			x(폴더 진입 권한) : cd
+
+     rwxr-xr-x : Symbolic 방식
+     755 : Numeric 방식(r - 4, w - 2, x - 1)
+
+-----------
+미니문제
+-----------
+rw-r-xr--	-> 654
+rwxr--r-x	-> 745
+r--rwxr--	-> 474
+r-xr--r-x	-> 545
+r--r-x---	-> 450
+
+755	-> rwxr-xr-x
+644	-> rw-r--r--
+701	-> rwx-----x
+542	-> r-xr---w-
+643	-> rw-r---wx
+375	-> -wxrwxr-x
+
+	chown - 소유권 변경 명령어
+		chown 사용자:그룹계정 디렉토리(파일)
+	chmod - 허가권 변경 명령어
+		Symbolic : chmod u+,g+,o+,a+  rwx 디렉토리(파일)
+		Numeric : chmod 755 디렉토리(파일)
+
+
+
+user10, user20, user30 생성
+
+useradd user10
+useradd user20
+useradd user30
+
+passwd user10
+1
+1
+passwd user20
+1
+1
+passwd user30
+1
+1
+
+
+1.
+  mkdir /perm
+
+2.
+  chown user30:user20 /perm
+
+3.
+  chmod o+rx,o-w /perm
+
+4.
+  chmod g+wx,g-r /perm
+
+5.
+  chmod u-rwx /perm
+
+3,4,5.
+  chmod 035 /perm
+
+6.
+  chmod u+rwx /perm
+  cat > test
+  testfile
+
+7.
+  chown :user20 /perm/test
+  chmod 624 /perm/test
