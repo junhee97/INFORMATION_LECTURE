@@ -1,0 +1,35 @@
+usermod
+  사용자 계정정보 변경
+	usermod [옵션] 유저명
+	옵션
+	-u : UID 변경
+	-g : 주 그룹 변경
+	-G : 보조 그룹 변경
+	-c : 주석 변경
+	-s : 쉘 변경
+
+
+userdel
+  계정 삭제 명령어
+	userdel 유저명
+
+/etc/passwd, /etc/shadow, etc/group은 삭제되나 /home과 /var/spool/mail은 삭제되지 않음
+	-r ->-r옵션을 사용하면 모두 삭제 가능
+
+
+
+
+프로세스 확인 명령어
+ps -elf
+
+F S UID         PID   PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+
+UID - 사용자
+PID - 프로세스를 식별하기 위해 프로세스에 부여하는 번호
+PPID - 부모 프로세스
+PRI - 작업 우선순위(낮은 값이 우선)
+NI - 값을 조정해서 우선순위를 높이거나 낮추거나 가능(-20 ~ +19)
+	nice -n -20 명령어		renice 숫자 -p PID
+
+
+

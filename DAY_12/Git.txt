@@ -1,0 +1,54 @@
+Git
+  분산형 버전 관리 시스템의 한 종류, 빠른 수행 속도에 중점
+
+
+버전 관리
+  특정 시점의 버전을 다시 꺼내올수 있는 시스템
+
+	각 파일을 이전 상태로 되돌릴 수 있다.
+	프로젝트를 통째로 이전 상태로 되돌릴 수 있다.
+	시간에 따라 수정 내용을 비교해 볼 수 있다.
+	누가 문제를 일으켰는지도 추적할 수 있다.
+	누가 언제 만들어 낸 이슈인지도 알 수 있다.
+	파일을 잃어버리거나 잘못 고쳤을 때도 쉽게 복구할 수 있다.
+
+
+Git의 장점
+	같은 파일을 여러명이 동시에 작업하는 병렬 개발이 가능
+	인터넷이 연결되지 않은 곳에서도 개발 진행 가능
+
+
+.git
+  HEAD 파일 : 현재 작업 중인 브랜치를 가리키는 파일
+  config 파일 : 저장소 설정 정보를 담고 있는 파일
+  description 파일 : 저장소의 설명을 담고 있는 파일
+  hooks 폴더 : 특적한 이벤트에 대해 자동으로 실행할 스트립트 파일을 담고 있는 폴더
+
+
+사용자 설정
+  git config --global user.email rlawnsgml97@naver.com
+  git config --global user.name junhee97
+
+git init		- 초기 파일 생성
+git add *		- Staging Area에 WD 변경사항 저장
+git commit -m ""	- COMMIT 시점 지정(버전 기록)
+git reset	--옵션	- 이전 버전으로 돌아가기
+	--soft : WD(O), SA(O), HAED(이동)
+	--mixed : WD(O), SA(X), HEAD(이동)
+	--hard : WD(X), SA(X), HEAD(이동)
+
+git log --oneline	- 로그 정보 확인
+
+
+git branch dev		- dev Branch 생성
+git switch(checkout) dev	- dev Branch로 이동
+git merge master		- master Branch에서 dev Branch 병합
+			  conflict가 없으면 바로 병합
+			- conflict가 발생하면 파일 수정 후
+			  git add * -> git merge --continue
+
+git remote add origin GithubRepository 주소
+
+git push 		- github에 올리는 작업
+git clone		- github에서 받는 작업(처음)
+git pull		- github에서 받는 작업
