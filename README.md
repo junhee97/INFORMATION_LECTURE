@@ -1,2 +1,2 @@
-# -SW-
+# INFORMATION_LECTURE
 정처산기 내용 정리
