@@ -1,0 +1,26 @@
+GitHub
+
+  REPO -> Settings -> Branches -> Add classic branch protection rule -> Branch name pattern(Branch 이름) -> 조건 설정
+	Branch에 병합 조건을 걸수 있음
+
+  REPO -> Settings -> Collaborators -> Add people -> username or email
+	REPO에 인원 추가
+
+
+Project란
+  작업 현황과 진행도를 볼수 있다.
+	To Do : 해야 할 작업
+	In Progress : 진행중인 작업
+	Done : 완료된 작업
+
+  프로젝트 생성
+  Projects -> New project -> Todo에 프로젝트 추가 -> In Progress로 이동
+	Assignees - 이슈를 처리할 사용자
+	Lavels - 종류
+
+
+Issues
+  Issues -> New Issue -> Create a branch
+	Assigneers : 해당 작업의 담당자
+	Labels : 해당 작업의 종류
+
