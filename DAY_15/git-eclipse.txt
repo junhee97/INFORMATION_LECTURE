@@ -1,0 +1,60 @@
+eclipse -> github에 연결
+
+기본 작업 세팅
+- Tomcat 연결
+	File -> New-> Other -> Server -> Tomcat v9.0 -> 톰캣 설치경로 -> HTTP Port 8090 / admin Port 8091 -> 동작
+
+- Dynamic Web Project생성
+	File -> New -> Dynamic Web Project -> 프로젝트 이름 작성 -> Finish
+
+- Java Version 설정
+	프로젝트 우클릭 -> Properties -> Project Facets -> Java 11버전 설정 -> Apply
+
+- servlet.jar, jsp-api.jar 를 src/main/webapp/web-inf/lib로 이동
+	C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib -> servlet-api.jar, jsp-api.jar 복사
+	-> src/main/webapp/web-inf/lib 붙여넣기
+
+- webapp -> index.jsp 생성
+	webapp 우클릭 -> New -> JSP File -> index
+
+- 동작확인
+
+
+git 설정
+ - git init 설정
+	프로젝트 우클릭 -> Team -> Share Project -> Create Repository -> Finish
+	프로젝트 폴더에 .git폴더가 만들어지면서 git 사용 가능
+	Window -> Show View -> Other -> GIT에서 필요한 뷰 꺼내기
+
+- index.jsp에서 내용 수정후 저장 -> Git Staging에서 커밋
+
+- branch 생성
+	프로젝트 우클릭 -> Team -> Switch To -> New Branch
+
+- branch switch
+	프로젝트 우클릭 -> Team -> Switch To -> 이동할 Branch 클릭
+
+- merge
+	프로젝트 우클릭 -> Team -> merge
+	conflict 발생시 내용수정후 -> commit
+
+
+
+LOCALHOST(eclipse)				REMOTE
+GIT REPO				->		GITHUB REPO
+				PUSH
+
+	GIT Repositories -> Remotes 우클릭 -> Create Remote -> Remote name : origin Create -> URL Change
+	-> GitHub 주소 붙여넣기 -> Authentication - user : email / 
+	password : (GitHub -> Settings -> Developer settings -> Personal access tokens -> Tokens(classic)
+	-> Generate new token -> Generate new token(classic) -> Note입력 / 만료 기한 설정 / 범위 설정
+	-> Generate token -> 만들어진 token 붙여넣기) -> Finish
+
+
+
+LOCALHOST(eclipse)				REMOTE
+GIT REPO				<-		GITHUB REPO
+				CLONE
+
+File -> Import -> Git -> Projects from Git -> Clone URI -> GitHub 주소 -> Directory 변경 -> Finish
+
