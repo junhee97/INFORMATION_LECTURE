@@ -1,0 +1,29 @@
+IDE(Git)		-Eclipse(JAVA, JSP/SERVLET)
+CMD		-STS3(전자정부 Framework)
+SourceTree	-Intellij
+깃크라켄		-Vscode
+
+
+SourceTree
+
+  git add, git commit, git push
+  git stash(임시저장), git rebase, git rebase merge(git tree 깔끔작업)
+  git flow
+
+
+  git stash
+	git add 이후 commit 하지 않고 임시 저장
+	다른 작업 후 commit창에서 불러와서 commit 가능
+
+  git rebase
+	두 개의 공통 Base를 가진 Branch에서 한 Branch의 Base를 다른 Branch의 최신 커밋으로 Branch의 Base를 옳기는 작업
+	dev Branch 생성 -> 작업 후 Commit
+	feature/func1 Branch 생성 -> 작업 후 Commit
+	feature/func2 Branch 생성 -> 작업 후 Commit
+	dev Branch에서 Readme.md 파일 수정 후 Commit
+	feature/func1 Branch로 이동해서 dev Branch 우클릭 -> 재배치
+	-> dev Branch로 이동 후 feature/func1 Branch Merge(fast-forward가 가능해도 새 커밋으로 생성 체크)
+	feature/func2 Branch로 이동해서 dev Branch 우클릭 -> 재배치
+	-> dev Branch로 이동 후 feature/func2 Branch Merge(fast-forward가 가능해도 새 커밋으로 생성 체크)
+	main Branch로 이동 후 dev Branch Merge(fast-forward가 가능해도 새 커밋으로 생성 체크)
+
