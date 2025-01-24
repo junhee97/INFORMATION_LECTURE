@@ -1,0 +1,67 @@
+HTML(Hyper Text Markup Language)
+	문서 및 웹 페이지가 표시되는 방법을 규정하는 언어
+	웹사이트의 구조를 만들 수 있다.
+
+
+CSS(Cascading Style Sheets)
+	HTML로 만들어진 문서의 스타일을 지정하는 방식을 규정하는 언어
+
+
+자바스크립트(Java Script)
+	웹사이트가 로딩횐 이후에 CSS와 HTML 구성요소들을 변경할 수 있게 해주며, 이를 통해서
+	웹사이트를 보다 인터랙티브하게 만들고 사용자의 참여율도 높일 수 있다.
+
+
+shift + alt + f : 정령
+shift + alt + 아래방향키 : 복사
+
+        <!DOCTYPE html>      :   이 문서가 HTML5 문서임을 선언
+        <html lang="ko">     :   HTML문서의 시작을 나타내며 lang 속성을 미리 이용하여 문서의 기본언어가 한국어임을 명시
+        <head>               :   문서의 메타데이터와 제목들을 포함하는 머리말
+        <meta charset="UTF-8">  : 문서의 문자 인코딩을 UTF-8 으로 설정
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        : 반응형 웹 디자인을 위한 뷰포트 설정
+        : width=device-width : 뷰포트의 너비를 디바이스의 너비만큼 설정
+        : initial-scale1.0   : 페이지가 처음 로드될때 기본 확대/축소 수준을 지정
+        <title>Document</title>
+        <body>               :    문서의 본문, 브라우저에 ViewPort(웹페이지를 사용자가 보는영역)에 표시되는 내용
+
+
+	<h1~6></h1~6> 제목 - 숫자가 작을수록 큰 제목
+	<hr> 수평줄
+	<br> 줄바꿈
+	<p></p> 단락 태그
+	<div></div> 블럭형 대표 태그
+	<span></span> 라인형대표 태그
+	<ul></ul> 리스트형 구조 생성 태그 - 순서 번호가 없는 리스트 (EMMET 단축 : ul>li*4{LIST$})
+	<ol></ol> 리스트형 구조 생성 태그 - 순서 번호가 있는 리스트 (type = a, i, 1)
+
+Emmet
+	자식요소 선택 : '>'
+	형제노드 : '+'
+	상위 태그로 이동 : '^'
+	메뉴구조 만들기 : div>ul>li>a{MAINMENU $}>ul>li*4{SUBMENU $}
+	메뉴구조 여러개 : div>ul>li>a*4{MAINMENU $}>ul>li*4{SUBMENU$}
+	클래스 선택자 : '.'
+	ID 선택자 : '#'
+	attr 추가 : [ ]
+	시작번호 선택 : @n
+
+Table
+	<tr></tr> : 행 구분
+	<th></th> : 테이블 헤더
+
+A tag
+	a 태그를 이용해서 링크 연결을 함
+	target="_blank" 옵션을 주면 새탭에서 열기 가능
+
+IMAGE
+	src="이미지 저장 위치(주소도 가능)" alt="이미지 설명"
+	png/jpg - 이미지 크기 조정시 깨질 수 있음
+	svg - 코드 형태로 저장되며 깨지지 않음
+
+
+block : 요소 바로 옆에 다른 요소를 붙여넣을 수 없음(ex - header, footer, p, li, table, div, h1 등)
+inline  : 요소는 요소끼리 서로 한 줄에, 바로 옆에 위치할 수 있음(ex - span, a, em 태그 등)
+inline-block : 기본적으로 inline 처럼 한 줄에 다른 요소들과 배치 가능 / 속성 지정 및 속성의 상하 간격 지정 가능
+		(ex - button, input, select 태그 등)
