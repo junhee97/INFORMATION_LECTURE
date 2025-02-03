@@ -1,0 +1,33 @@
+  Box-border
+	테두리 선 종류
+	  solid - 직선
+	  dashed - 대시선
+	  dotted - 점선
+	  double - 이중선
+
+	테두리 깎기
+	 border-radius : px;
+
+  Box-Overflow
+	overflow: hidden;
+	overflow: scroll;
+	overflow-x: scroll;
+	overflow: visible;(기본 값)
+
+
+SELECTOR
+  전체선택자 : *
+  요소선택자 : div, p, ...
+  id선택자(유일한 값을 가지도록) : #nnn
+  class선택자 : .nnn
+  그룹선택자 : #nnn, .nnn(중간에 콤마 사용해서 그룹선택 가능) 
+
+  ★자식선택자 : >
+  자손선택자 : 공백
+
+  동위선택자(같은 Depth의 하위 모든 선택자) : ~
+  동위선택자(같은 Depth의 하위 1개 선택자) : +
+
+  가상선택자
+	::before : content 영역 앞에 표시할 스타일
+	::after : content 영역 뒤에 표시할 스타일
