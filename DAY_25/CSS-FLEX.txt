@@ -1,0 +1,51 @@
+Position
+
+  Fixed
+	뷰포트를 기준으로 고정
+  Sticky
+	상위태그의 범위내에서 이동
+
+  z-index
+	position 설정이 안되어있는 요소의 스타일엔 z-index는 설정할 수 없다.
+	z-index : auto 순서에 맞게 z-index를 고려
+
+Flex
+
+  display : flex;
+  수평배치 : center, right, left, space-between, space-evenly, space-around
+    justify-content : @@@;
+
+  item간 여백지정없는 설정시 gap option 사용가능
+    gap : n px;
+
+  수직배치 : start, end, center, flex-start, flex-end
+    align-items : @@@;
+
+  방향지정 : row, column / row-reverse, column-reverse (역순으로 배치)
+    flex-direction : @@@;
+
+  height 설정 : stretch, flex-start, flex-end
+    align-self : @@@;
+
+  flex-wrap : 자식 태그가 부모태그의 width를 넘어서면 아래로 내려오게 설정
+	wrap/nowrap
+
+  flex 아이템의 증가 비율 설정 (0 - 기본값 : 증가하지 않음)
+	flex-grow: 0;
+
+  flex 아이템의 감소비율 설정(0 - 감소하지 않음 / 1- 기본값 : 너비에 따라 감소)
+	flex-shrink: 1;
+
+  기본크기 지정
+	flex-basis: n px;
+
+
+Grid 속성
+	display: grid - 그리드 컨테이너 설정
+	grid-template-columns - 열(column) 구조 정의
+	grid-template-areas - 영역 이름으로 레이아웃 구성
+	gap - 그리드 아이템 간격
+	fr 단위 - 사용 가능한 공간의 비율
+	repeat() - 반복되는 값을 간단히 표현
+	minmax() - 최소/최대 크기 설정
+	auto-fit - 반응형 그리드에 활용
