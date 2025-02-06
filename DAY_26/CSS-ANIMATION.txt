@@ -1,0 +1,38 @@
+Animation
+
+  Trnasform
+	위치이동
+	  transform : translate(n px, n px);
+	  transform : translateX(n px); - x축
+	  transform : translateY(n px); - y축
+
+	크기조정
+	  transform : scale(n,n); - x,y 배율
+	  transform : scale(n) - 전체크기 배율로
+
+	회전
+	  transform : rotate(n deg); - n각도만큼 회전
+
+	기울이기
+	  transform : skew(n deg); - n각도만큼 늘어짐
+
+	동시적용
+	  transform : translate(n px, n px) rotate(n deg) scale(n ); - 붙여서 작성
+
+	원근법 설정
+	  transfrom : perspective(n px) - z축(화면쪽 방향)
+
+	자식요소들에게 3D효과를 전파
+	  transform-style : preserve-3d;
+
+	Animation
+	  @keyframes name{} - animation 이름 지정
+		from{} - 출발지
+		to{} - 도착지
+
+animation-timing-function - animation 이동
+  ease : 천천히 - 빠름 - 천천히
+  ease-in : 천천히 - 빠름
+  ease-out : 빠름 - 천천히
+  ease-in-out : 천천히 - 보통 - 천천히
+  linear : 일정속도
