@@ -1,0 +1,46 @@
+JavaScript
+  웹브라우저의 다양한 기능을 사용하는 프로그래밍 언어
+  Data를 저장할 수 있다.
+	DATA - 선 저장, 후 처리
+
+  onclick="alert()"
+
+
+  body 끝단
+	<script></script>
+
+
+  document 객체
+	document.write()
+
+  null - object
+  undefined - 정의(메모리 공간 사용)x
+
+
+  기본 자료형
+	Number, String, Object - {key : value, key : value},
+	Null - 변수 초기화(공간형성 + 기본값 삽입(개발자가 의도한 값 null 삽입)),
+	undifined - 변수 정의(공간형성 + 기본값은 생략(undefined 자료형의 값 저장)),
+	boolean
+
+  보간법
+	변수, 함수 호출 및 산술 표현식을 문자열에 직접 삽입할 수 있는 기능
+	${value} 형식을 사용, 백틱(``)에만 사용 가능
+	${보간법 적용 범위}
+
+  Object
+	object(사물) < 객체
+	객체의 구성요소
+	속성(객체의 고유 Data - 저장대상) / 기능(function)
+
+  배열
+	여러 자료형을 저장하기 위한 자료구조
+  배열 함수 사용해보기(forEach)
+	arr.forEach((item) => {
+	  console.log('item', item);
+	});
+  배열 함수 사용해보기
+	push : 마지막 index에 요소 추가
+	  arr.push('');
+	pop : 마지막 index 요소 삭제
+	  arr.pop();
