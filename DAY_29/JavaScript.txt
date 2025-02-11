@@ -1,0 +1,30 @@
+  정렬( sort ) 
+	배열.sort();	// 오름차순
+
+	배열.sort((a,b) => {return b-a;});	//내림차순
+	배열.sort((a, b) => b - a);		//들어갈 요소가 하나 뿐이라면 return, 중괄호 생략 가능
+
+	배열.forEach((item) => { console.log("item : ", item) });
+	배열.forEach(item => console.log("item : ", item));
+	  // 들어갈 요소가 하나 뿐이라면 괄호 생략 가능
+
+
+  필터( filter )
+	let filtered_arr1 = 배열.filter((item) => {return typeof item == "number"});
+	  // 숫자만 출력
+	배열.filter(item => typeof item == 'string').forEach(item => console.log(item));
+	  // 문자열만 출력
+
+
+  누적( reduce )
+	누산된 결과값 = 배열.reduce((누산변수, item) => {return 연산로직}, 누산변수의 초기값);
+	const r_val = 배열.filter((item) => { return typeof item == 'number' })
+		.reduce((sum, item) => { return sum + item; }, 0);
+	  // 요소가 숫자인것만 필터링 해서 누적합산
+
+
+  배열 object 처리 [ {}, {}, {}, {}, ... ]
+
+
+  재구성( map )
+	배열.map(( item ) => { return 재구성할item; });
