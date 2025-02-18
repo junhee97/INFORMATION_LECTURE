@@ -1,0 +1,36 @@
+키보드 이벤트
+	KEYUP		: 키보드가 올라올때
+	KEYDOWN	: 키보드가 내려갈때
+	KEYPRESS		: 키보드를 계속 누를때
+
+	input		 : 텍스트 입력이 완료될때 발생 ( 한글포함 )
+	compositionstart	 : 한글 조합 시작시 발생
+	compositionupdate : 한글 조합 중 발생 ( 현재 조합 상태를 확인 )
+	compositionend	 : 한글 조합 완료시 발생 ( 완성된 글자 확인 )
+
+
+스크롤 이벤트
+	세로축 확인
+	window.scrollY	: ViewPort를 기준으로 가장 위쪽 부분의 세로축 위치
+	console.log('scrollY...', window.scrollY);
+	console.log('scrollY...', document.documentElement.scrollTop);
+	console.log('scrollY...', document.documentElement.scrollHeight);
+
+	가로축 확인
+	console.log('scrollX...', window.scrollX);
+	console.log('scrollX...', document.documentElement.scrollLeft);
+	console.log('scrollX...', document.documentElement.scrollWidth);
+
+
+RESIZE
+	console.log('외부 크기 변화 width확인', window.outerWidth);
+	console.log('외부 크기 변화 height확인', window.outerHeight);
+	console.log('내부 크기 변화 width확인', window.innerWidth);
+	console.log('내부 크기 변화 height확인', window.innerHeight);
+
+
+LOAD 이벤트
+	DOMContentLoad	: 최초 Document 로드시 1회 동작 ( HTML이 전부 파싱된 이후 DOM객체가 완성되고 나서 실행,
+			  CSS, 외부파일 로드 여부와 관계없음 )
+	Load		: 최초 Document 로드시 1회 동작 ( 모든 리소스가 완전히 로드된 이후 실행 )
+	
