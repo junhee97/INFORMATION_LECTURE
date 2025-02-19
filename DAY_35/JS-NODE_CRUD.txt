@@ -1,0 +1,30 @@
+NODE_검색
+	getElementById('id명');
+
+	querySelector('선택자'); - 단일 선택자
+	querySelectorAll('선택자'); - 모든 선택자
+	선택자 자리에 class가 올 경우 .class명 / id가 올 경우 #id명
+
+	getElementByTagName('태그명');
+	  배열 X - forEach 사용불가
+	  유사배열 -> 배열 ( Array.from() );
+
+
+FORM_검색
+	전체 form 찾기 - document.forms;
+	개별 form 접근 ( [ index ] ) , form의 name이 지정된 경우 - document.name;
+	개별 form 내의 자식노드 접근 ( [ index ] [ index ] )
+
+
+Class_추가
+	클래스명.classList.add( '클래스명' );
+
+Class_삭제
+	클래스명.classList.remove( '클래스명' );
+
+
+EL_CRUD
+	SCREEN_IMPL 참조
+
+	node1.before(node2); - node1위에 node2 배치 
+	node1.after(node2); - node1밑에 node2 배치
