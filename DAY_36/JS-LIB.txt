@@ -1,0 +1,15 @@
+SWIPER
+	Swiper는 슬라이드를 구현하는 라이브러리
+	기본 구조 : swiper-container > swiper-wrapper > swiper-slide
+	direction : horizontal(수평), vertical(수직)
+	effect : slide(기본), fade, scroll, cube, coverflow, flip
+	pagination - type : bullets(기본), fraction, progressbar
+
+
+LODASH
+	Lodash는 데이터의 구조를 간편하게 사용하는 라이브러리
+	밑줄 '_' 기호를 처음에 선언하여 사용
+
+
+SCROLLMAGIC
+	스크롤 시 여러가지 옵션을 주는 라이브러리
