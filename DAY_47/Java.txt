@@ -1,0 +1,67 @@
+자바 API
+	lang and util - 자바 언어의 주요 구성요소와 관련된 패키지
+	Math - 각종 수학 계산과 관련된 클래스 및 유틸리티
+	★ Collections - 다양한 자료구조를 동일한 방법으로 처리할 수 있도록 하는 라이브러리
+	Input / Output - 키보드, 네트워크, 파일 등 입출력 관련 주요 기능을 제공하는 라이브러리
+	Date and Time - 시간 및 날짜 처리 관련 라이브러리 - Date / Calendar
+	Networking - 네트워크 통신 프로그래밍 관련 라이브러리
+	Swing / AWT - 그래픽 사용자 인터페이스 구현 관련 라이브러리
+	★ JDBC - 데이터베이스 프로그래밍 관련 라이브러리
+
+
+Object.class
+	모든 클래스의 최상위의 부모 클래스
+
+
+Wrapper 클래스
+	자바의 기본 자료형을 개체 타입으로 처리할 수 있도록 만든 클래스
+	원시타입 -> Wrapper 바꾸는 작업 Boxing <-> UnBoxing
+
+
+날짜 관련 클래스 - Date / Calendar
+
+Date 클래스
+	인스턴스 생성 후 메소드를 호출하여 사용
+	Date date = new Date();
+	System.out.println("현재 날짜와 시간은 : " + date);
+
+Calendar 클래스
+	객체를 생성할 수 없는 대신 getInstance() 메소드를 사용하여 정보를 가져온다
+	Calendar cal = Calendar.getInstance();
+	int year = cal.get(Calendar.YEAR);
+	int hour = cal.get(Calendar.HOUR_OF_DAY);
+	System.out.println("년 : " + year);
+	System.out.println("시 : " + hour);
+
+Formatter
+	포매터를 이용하여 입력 양식이나 출력 양식을 바꿀수 있다
+
+
+예외
+	프로그램이 실행되는 동안에 발생하는 예기치 않은 에러
+	Compile time Error - 컴파일할 때 발생하는 에러
+	Run time Error - 실행할 때 발생하는 에러
+
+예외처리
+	프로그램 실행 시 발생할 수 있는 예외의 발생에 대비한 코드를 작성하는 것
+	( 강제종료 대신 의도된 종료 가능 )
+	프로그램의 비정상 종료를 막고 정상적인 실행상태를 유지
+
+try - catch
+	try{
+		Exception 발생 코드
+	} catch () {
+		출력 코드
+	}
+	finally { // 예외 발생 여부와 상관없이 무조건 실행
+	// 자원정리 작업
+	}
+
+throw And throws
+	throw - 3인칭 = 예외를 만들 때 사용
+	throws - 1인칭 = 예외를 던질 때 사용
+
+
+Generic
+	클래스 내부에서 사용할 데이터 타입을 외부에서 지정하는 방법
+	미지정된 데이터 타입이므로 여러 데이터 타입의 자료형 적용 가능
