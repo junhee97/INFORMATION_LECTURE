@@ -1,0 +1,25 @@
+COLLECTION FRAMEWORK
+	배열과 비슷한, 동적, 임시 저장공간
+	List - 순서 o, 중복 o / Set - 순서 x, 중복 x 
+	Map - K : V 형식으로 저장( K - 유일 / V - 중복 ) K 저장시 Set 사용
+
+List
+	자료를 일렬로 나열하여 저장하는 방식
+	객체 추가 / 검색 / 삭제
+	중복 허용 O
+
+Set
+	저장 순서가 유지되지 않는 형태의 저장
+	중복 허용 X
+
+Map
+	키 ( Key ) 와 값 ( Value ) 으로 구성
+	키는 중복 저장될 수 없지만 값은 중복 저장 가능
+	
+
+application.properties
+	등호 기준으로 왼쪽 : Key / 오른쪽 : Value
+
+
+Swing
+	
