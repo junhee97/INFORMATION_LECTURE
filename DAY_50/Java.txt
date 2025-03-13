@@ -1,0 +1,17 @@
+Stream
+	입출력 장치와 프로그램 간 데이터 전송 통로
+	단방향 통신 제공
+	문자 스트림, 바이트 스트림
+
+바이트 스트림
+	스트림은 기본적으로 바이트 단위로 데이터를 전송합니다
+	InputStream
+	OutputStream
+
+문자 스트림
+	자바에서 가장 작은 타입인 char 형이 2바이트 이므로, 1바이트씩 전송되는
+	바이트 기반 스트림으로는 원활한 처리가 힘듦
+	따라서 자바에서는 문자 스트림도 제공
+	InputStream -> Reader
+	OutputStream -> Writer
+	Writer 이름 = new FileWriter( "경로주소" , false/true ) ; false - 덮어쓰기 / true - 추가하기
