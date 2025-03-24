@@ -1,0 +1,17 @@
+SELECT 문 기본 구조
+  SELECT 컬럼
+  FROM 테이블
+  [WHERE 조건]
+  [GROUP BY 컬럼]
+  [HAVING 조건]
+  [ORDER BY 컬럼 ASC / DESC];
+
+
+조건
+	관계연산자
+	BETWEEN A AND B;
+	IN(' ', ' ' );
+	LIKE % (모든문자, 길이제한 x) / _ (모든문자, _ 만큼의 길이)
+
+- 함수 : TRIM("문자열")
+	TRIM 함수는 문자열의 양쪽 공백을 제거한다
