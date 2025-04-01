@@ -1,0 +1,28 @@
+CLIEMT(View(요청)) -> Server 컴퓨터 (Apache	+ Tomcat)
+				.jsp
+				<html>
+				...JAVA스크립트 코드 -> 해석기 -> JAVA파일변환(Servlet) -> 컴파일 -> .class -> JVM -> 동작처리
+
+class Simple {
+	// 속성
+
+	// 기능
+
+선언문
+	서블릿으로 변환되는 자바파일의 속성/기능을 추가
+	<%! %>
+
+표현식
+	SERVLET 파일(JAVA파일) 안의 값을 FRONTEND로 전달 표현할때 사용
+	<%= %>
+
+Scriptlet 
+	JSP -> Servlet파일로 변환될 때 Servlet내의 Service 함수 안에서 처리되는 로직
+	Service라는 함수내에서 동작하기 때문에 지역변수 선언, 반복문/분기문 처리가 가능
+	하지만 함수를 벗어나면 지역변수는 소멸되기 때문에 요청시(ex 새로고침) 상태값이 초기화 된다
+	<% %>
+
+Request
+	Request시 get 방식과 post 방식이 있음
+	get : URL에 전달할 내용이 포함
+	post : URL에 데이터가 노출되지 않음
