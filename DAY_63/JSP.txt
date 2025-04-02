@@ -1,0 +1,33 @@
+지시자
+	JSP 페이지에 대한 전역적인 설정을 지정할 때 사용
+
+지시자 종류
+	page - <%@ page 속성 = "값" %>
+		JSP 페이지의 전역 속성 설정
+		import -> <%@ page import = "java.util.*", C03.*%>
+		error page
+	include - <%@ include file = "파일명" %>
+		정적인 파일 포함
+	taglib - <%@ taglib prefix = "접두어" uri = "태그라이브러리URI" %>
+		커스텀 태크 사용을 위한 태그 라이브러리 선언
+
+★
+Forward 방식 페이지 요청
+	Request 내용은 유지한 채 또 다른 Page 경로로 이동
+	클라이언트이 URL경로는 최초 요청시의 URL로 유지가 된다
+	Request 객체의 내용은 최초 요청내잉이 유지된다(Forward 되는 동안)
+	하나의 요청 - 응답 주기를 가진다
+	Forwarding 형태
+	request.getRequestDispatcher("이동할 경로").forward(request, response);
+
+Redirect 방식 페이지 요청
+	서버가 클라이언트에게 새로운 요청 URL 경로를 전달
+	클라이언트는 서버와 제시 간 URL 경로로 새롭게 페이지 요청
+	Request 객체와 Response 객체는 redirect 횟수만큼 새로운 값으로 대체
+	Redirect 형태
+	response.sendRedirect("이동할 경로");
+	새로 이동할 경로에 값을 전달하고 싶은 경우(ex - hobby)
+	response.sendRedirect("이동할 경로 ?hobby=" + URLEncoder.encode("등산", "UTF-8"));
+		한글의 경우 URLEncoder.encode 사용
+		URLEncoder.encode 사용하려면 ->
+			페이지 지시자 사용 : <%@ page import = "java.net.*" %> 
