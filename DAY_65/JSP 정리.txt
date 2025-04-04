@@ -1,0 +1,33 @@
+선언문 <%! %>
+	서블릿의 속성 / 기능
+
+스크립틀릿 <% %>
+	서블릿의 service 함수 안
+
+표현식 <%= %>
+	service 함수 안 -> view out.print ( )
+
+지시자 <%@ %>
+	page import = ""
+	include Layout
+
+Forward / Redirect
+	Forward :  서버내 다른 페이지로 이동 request / response 유지
+	Redirect : 다른 경로로 이동 유도 new request
+
+내장객체
+	pageContext / request, response / session /
+	${pageContext.request.contextPath}
+	application
+
+세션 / 쿠키
+	공통점 : 정보저장(임시)
+	서버에 저장 : 세션 (서버 종료시 삭제)
+	브라우저에 저장 : 쿠키 (지정된 시간까지 유지 maxAge( ))
+
+EL
+	표현식 대체
+
+JSTL
+
+★DB

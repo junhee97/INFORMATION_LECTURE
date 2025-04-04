@@ -1,0 +1,18 @@
+EL(Expression Language)
+	내장객체의 Scope 참조
+	pageScope : 현재 JSP 페이지 내에서만 사용가능한 속성 / 기능 ( 관련 내장객체 : pageContext )
+	requestScope : 하나의 요청 처리동안 ( 관련 내장객체 : request )
+	sessionScope : 일정기간 동안 ( 지정된 or 기본값 ) ( 관련 내장객체 : session )
+	applicationScope : 서버 종료시 까지 ( 관련 내장객체 : application )
+
+	ATTRIBUTE(중복값) : 가장 좁은 범위의 값만 출력
+	연산자 : 문자열도 int형으로 자동 파싱
+	NULL CHECK : ${null} -> 표시 x
+	empty NULL : ${empty null} -> true
+	empty NULL : ${empty ""} -> true
+	empty NULL : ${empty " "} -> false
+	empty NULL : ${empty test} -> true
+	empty not NULL : ${!empty test} -> false
+	-> test 안에 속성 값이 비었는지를 확인( setAttribute("test", "1") -> test안에 값을 넣으면 )
+		empty NULL : ${empty test} -> false
+		empty not NULL : ${!empty test} -> true
