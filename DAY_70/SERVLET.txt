@@ -1,0 +1,18 @@
+/admin_main	필요한 권한값 (3)	-  ROLE_ADMIN
+/manager_main	필요한 권한값 (2)	-  ROLE_MANAGER
+/user_main	필요한 권한값 (1)	-  ROLE_USER
+		권한 없음 (0)	-  ROLE_ANONYMOUS
+
+
+리스너
+	이벤트가 발동될 때 사용
+
+RESOURCE
+	Tomcat 등의 서블릿 컨테이너에서 **JNDI(Java Naming and Directory Interface)**로
+	사용할 **외부 자원(Resource)**을 등록하기 위한 설정 태그입니다.
+	대표적으로 DB 연결 풀, 메일 서버, JMS 큐 등 다양한 자원을 등록하여
+	Java EE 애플리케이션에서 JNDI로 참조할 수 있도록 합니다.
+
+	속성설명nameJNDI에서 참조할 이름 (java:comp/env/ 하위로 매핑됨)auth일반적으로
+	"Container"type자원의 클래스 타입 (javax.sql.DataSource, javax.mail.Session 등)
+	기타 속성들리소스에 따라 DB URL, 사용자명, 패스워드, SMTP 서버 등 다양한 속성 설정 가능
