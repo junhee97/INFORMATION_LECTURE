@@ -12,3 +12,5 @@ MVC pattern (DAY_58 - DAY_61)
 JSP/SERVLET (DAY_62 - ) - JSP_SERVLET 참조
 <br>
 문제 풀이 (DAY_66 - DAY_68) - JSP_SERVLET 참조
+<br>
+JSP/SERVLET MVC pattern (DAY_71 - DAY_74) - JSP_SERVLET 참조
