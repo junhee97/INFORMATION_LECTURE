@@ -9,8 +9,10 @@ DataBase (DAY_56 - DAY_58) - DataBase 참조
 <br>
 MVC pattern (DAY_58 - DAY_61)
 <br>
-JSP/SERVLET (DAY_62 - ) - JSP_SERVLET 참조
+JSP/SERVLET (DAY_62 - DAY_76) - JSP_SERVLET 참조
 <br>
 문제 풀이 (DAY_66 - DAY_68) - JSP_SERVLET 참조
 <br>
-JSP/SERVLET MVC pattern (DAY_71 - DAY_74) - JSP_SERVLET 참조
+JSP/SERVLET MVC pattern (DAY_71 - DAY_76) - JSP_SERVLET 참조
+<br>
+STS3 (DAY_76 - ) - STS3 참조
