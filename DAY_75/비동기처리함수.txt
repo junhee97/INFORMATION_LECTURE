@@ -1,0 +1,9 @@
+비동기 처리
+
+xhr
+
+ajax(jquery)
+
+promise
+fetch
+axios

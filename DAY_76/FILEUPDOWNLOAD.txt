@@ -1,0 +1,4 @@
+1. DB 저장 (blob 컬럼)
+
+2. FileSystem에 저장	->	DB 저장 경로 등록
+  C:\upload\user\file.txt		"C:\upload\user\file.txt"
