@@ -1,0 +1,12 @@
+servlet-context.xml
+	FrontController 역할을 하는 DispatcherServlet 설정 파일
+	정적 자원의 경로(css, js...) 지정
+	MVC Component(@Controller, @Service, @Repository ...) 애노테이션 활성화
+	View Resolver(Page와 연결을 담당하는 Bean)등 설정
+
+root-context.xml
+	애플리케이션 전체에서 공유되는 설정 파일
+	전역 설정 or Bean의 정의
+	주로 비즈니스 로직과 관련된 서비스, Dao등을 설정
+	데이터베이스 연결, 트랜잭션 관리, 보안설정(Spring Security등...)과 같은 애플리케이션 전체에서 굥유되는 설정을 포함
+	딱 한번 생성되는 Bean들이 정의되며, 모든 웹 요청에 공유
