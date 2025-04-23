@@ -1,0 +1,36 @@
+PARAMETER
+
+@RequestMapping
+	스프링 MVC에서 가장 기본적으로 사용되는 애노테이션으로, HTTP 요청과 메소드를 매핑
+
+@GetMapping
+	HTTP GET 요청과 메소드를 매핑
+
+@PostMapping
+	HTTP POST 요청과 메소드를 매핑
+
+@PutMapping
+	HTTP PUT 요청과 메소드를 매핑
+
+@DeleteMapping
+	HTTP DELETE 요청과 메소드를 매핑
+
+@RequestParam
+	HTTP 요청의 파라미터를 메소드의 파라미터와 바인딩
+	URL 쿼리 문자열이나 POST 요청의 form 데이터와 매핑
+
+@RequestBody
+	HTTP 요청의 본문(body)을 메소드의 파라미터에 바인딩
+	주로 JSON 또는 XML 형식의 데이터를 객체로 변환할 때 사용
+
+@PathVariable
+	URI의 일부를 메소드의 파라미터에 바인딩
+	주로 RESTful API에서 동적인 URI를 처리할 때 사용
+
+@ModelAttribute
+	요청의 특정 속성을 메소드의 파리미터로 바인딩
+	주로 HTML 폼 데이터를 모델 객체로 변환할 때 사용
+
+
+VALIDATION
+
