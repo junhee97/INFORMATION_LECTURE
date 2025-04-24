@@ -1,0 +1,45 @@
+VALIDATION
+
+숫자 유효성 검사:
+  @Min(value, message): 숫자가 주어진 최솟값보다 큰지 확인합니다.
+  @Max(value, message): 숫자가 주어진 최댓값보다 작은지 확인합니다.
+  @Positive: 숫자가 양수인지 확인합니다.
+  @PositiveOrZero: 숫자가 양수 또는 0인지 확인합니다.
+  @Negative: 숫자가 음수인지 확인합니다.
+  @NegativeOrZero: 숫자가 음수 또는 0인지 확인합니다.
+
+문자열 유효성 검사:
+  @NotBlank(message): 문자열이 비어 있지 않은지 확인합니다.
+  @Size(min, max, message): 문자열의 길이가 주어진 범위 내에 있는지 확인합니다.
+  @Email(message): 문자열이 유효한 이메일 주소인지 확인합니다.
+  @Pattern(regexp, message): 정규 표현식에 맞는지 확인합니다.
+  @URL(message): 문자열이 유효한 URL인지 확인합니다.
+
+날짜와 시간 유효성 검사:
+  @DateTimeFormat(pattern): 날짜와 시간의 형식을 지정합니다.
+  @Future: 날짜가 미래인지 확인합니다.
+  @FutureOrPresent: 날짜가 미래이거나 현재인지 확인합니다.
+  @Past: 날짜가 과거인지 확인합니다.
+  @PastOrPresent: 날짜가 과거이거나 현재인지 확인합니다.
+
+기타:
+  @AssertTrue: boolean 타입의 값이 true인지 확인합니다.
+  @AssertFalse: boolean 타입의 값이 false인지 확인합니다.
+  @CreditCardNumber: 신용카드 번호의 유효성을 검증합니다.
+
+
+EXCEPTIONHANDLER
+
+@ExceptionHandler
+	특정 컨트롤러 내에서 예외 처리를 담당
+	예외가 발생했을 때 특정한 메소드가 호출되어 예외를 처리하고, 사용자에게 적절한 응답을 반환
+
+
+DATASOURCE
+	DataSource는 데이터베이스와의 연결을 관리하는 객체로, JDBC 커넥션을 추상화한 인터페이스
+	Spring에서는 직접 Connection을 생성하지 않고 DataSource를 통해 DB 연결을 수행함
+	javax.sql.DataSource 인터페이스를 기반으로 동작
+
+Custom Bean 등록 방법
+	설정파일에 등록
+	java config
