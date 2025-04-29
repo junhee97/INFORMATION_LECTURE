@@ -1,0 +1,55 @@
+INTERCEPTOR
+	스프링 MVC 요청 처리 흐름에 개입할 수 있는 가로채기(Interceptor) 기능
+	컨트롤러 실행 전, 실행 후, 뷰 렌더링 후에도 개입 가능
+
+	preHandle()
+	컨트롤러 호출 전에 실행
+	postHandle()
+	컨트롤러 실행 후, 뷰 랜더링 전에 실행
+	afterCompletion()
+	뷰 랜더링 완료 이후 실행
+
+
+HANDLERMAPPING
+	1. BEAN MAPPING
+	BeanNameUrlHandlerMapping : 요청 URL을 동일한 이름을 가진 Bean에 매핑
+
+	2. SimpleUrlHandlerMapping
+	개발자가 직접 매핑정보를 설정ㅎ나느 방식 중 하나, 기본값 : 정적 자원 매핑
+
+	3. RequestMappingHandlerMapping
+	Controller와 매핑되는 URL을 찾아내고 해당 URL에 대한 요청 처리
+	적절한 컨트롤러 및 매소드를 찾아 매핑(@RequestMapping, @GetMapping, etc...)
+
+
+SPRING SECURITY
+	인증과 권한을 처리하는 강력하고 확장 가능한 보안 프레임워크이다.
+	웹 애플리케이션과 API의 접근 제어, 세션 관리, CSRF, CORS, 패스워드 암호화 등을 지원
+
+특징
+	인증/인가를 필터 체인 기반으로 처리
+	세션 및 JWT 기반 인증 방식 지원
+	다양한 로그인 방식 지원 (폼 로그인, 소셜 로그인, HTTP Basic 등)
+	메서드 수준 보안 제공 (@Secured, @PreAuthorize 등)
+	유연한 커스터마이징 가능 (필터, 핸들러, 토큰 처리 등)
+
+SCHEDULING
+	특정 시간 간격 또는 특정 시점에 자동으로 작업을 수행하게 만드는 기능
+	Spring에서는 @Scheduled 어노테이션을 사용해 간단하게 구현 가능
+	별도의 스테르 풀에서 비동기로 실행됨
+
+
+AOP
+	Aspect Oriented Programming의 약자로 관점 지향 프로그래밍이라고 불린다.
+	관점 지향은 쉽게 말해 어떤 로직을 기준으로 핵심적인 관점, 부가적인 관점으로 나누어서
+	보고 그 관점을 기준으로 각각 모듈화 하겠다는 것이다.
+	여기서 모듈화란 어떤 공통된 로직이나 기능을 하나의 단위로 묶는 것을 말한다.
+
+AOP의 주요 개념
+	Aspect : 부가기능을 모듈화함.
+	Target : Aspect를 적용하는 곳 (클래스, 메서드 .. )
+	Advice : 실질적으로 어떤 일을 해야할 지에 대한 것, 실질적인 부가기능을 담은 구현체
+	JointPoint : Advice가 적용될 위치, 끼어들 수 있는 지점. 
+	메서드 진입 지점, 생성자 호출 시점, 필드에서 값을 꺼내올 때 등 다양한 시점에 적용가능
+	PointCut : JointPoint의 상세한 스펙을 정의한 것.
+	더욱 구체적으로 Advice가 실행될 지점을 정할 수 있음
