@@ -1,0 +1,12 @@
+1  ROLE 별 PAGE 권한 체크
+
+2  CSRF TOKEN
+
+3  CUSTOM LOGIN PAGE
+
+4  INMEMORY -> PrincipalDetailsService
+		(UserDetails, UserDetailsService)
+
+5  HANDLER
+
+6  REMEMBER-ME
