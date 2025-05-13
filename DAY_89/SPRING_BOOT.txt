@@ -1,0 +1,10 @@
+카카오 로그인	REST API
+
+카카오 로그인 과정
+	REST API 방식의 카카오 로그인은 PC 및 모바일 웹에서 사용하기 적합한 방식
+
+1. 인가 코드 받기
+	getCode 에서 redirect_uri, client_id, response_type 을 리턴한다.
+	callback 에서 code를 받는다.
+2. 토큰 받기
+3. 사용자 로그인 처리
