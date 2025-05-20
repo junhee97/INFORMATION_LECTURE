@@ -1,0 +1,16 @@
+로그인 처리
+
+최초 로그인 ( Client's AT x, DB x )
+	Client 에게 AT 전송
+	DB 저장
+
+기존 로그인 ( Client's AT o, DB o )
+	AT 만료 x -> 로그인 완료처리
+	AT 만료 o -> RT x -> AT 갱신
+	AT 만료 o -> RT o -> AT, RT 새로 발급 + DB 저장
+
+기존 로그인 ( Client's AT o, DB x )
+	-
+
+기존 로그인 ( Client's AT x, DB o )
+	예외 상황
