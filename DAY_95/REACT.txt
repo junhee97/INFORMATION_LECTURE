@@ -1,0 +1,59 @@
+Node.js
+	브라우저 외부에서도 JavaScript를 실행할 수 있게 해줌
+	비동기 이벤트 기반으로 고성능 I/O 처리에 특화
+
+Node.js 구성요소
+	V8 Engine : 자바스크립트 실행 엔진 (Google Chrome에서 사용)
+	libuv : 이벤트 루프, 비동기 I/O를 위한 라이브러리
+	npm (Node Package Manager) : 패키지 관리 도구
+	내장 모듈 : fs, http, path, os 등 기본 제공 모듈
+
+
+React
+	사용자 인터페이스(UI)를 구축하기 위해 사용됩니다.
+	주로 단일 페이지 애플리케이션(SPA)에서 빠르고 효율적인 UI 업데이트를 위해 활용되며,
+	컴포넌트 기반 구조로 UI를 재사용 가능한 단위로 나눌 수 있게 해줍니다.
+
+React의 주요 특징 및 장점
+	1. 컴포넌트 기반 아키텍처
+		UI를 독립적이고 재사용 가능한 컴포넌트로 분할
+		각 컴포넌트는 고유한 상태(state)와 속성(props) 관리
+	2. Virtual DOM
+		실제 DOM 대신 메모리 상에서 Virtual DOM을 생성
+		변경 사항을 실제 DOM과 비교하여 최소한의 변경만 적용 → 성능 향상
+
+	3. 단방향 데이터 흐름
+		부모에서 자식 컴포넌트로만 데이터 흐름
+		예측 가능한 데이터 관리 가능
+
+	4. JSX
+		JavaScript와 HTML을 혼합한 문법
+		HTML 유사 문법을 통해 가독성과 유지보수성 향상
+
+	5. React Hooks
+		함수형 컴포넌트에서도 상태관리 및 생명주기 활용 가능
+		주요 Hook: useState, useEffect, useContext 등
+
+	6. 풍부한 생태계
+		Redux, React Router, Styled-Components 등 다양한 라이브러리와의 호환
+
+	7. 서버사이드 렌더링(SSR)
+		Next.js 등의 프레임워크를 통해 SSR 지원
+		SEO 친화적이며 초기 로딩 속도 향상
+
+	8. 지속적인 업데이트
+		Facebook에 의해 관리되고 있어 꾸준한 성능 개선 및 커뮤니티 피드백 반영
+
+
+JSX
+	JavaScript에 XML을 추가한 확장 문법이다.
+	React에서 컴포넌트를 만드는데 유용하게 사용된다.
+
+JSX 문법 정리
+	1. JSX에서는 class가 아닌 className을 사용한다.
+	2. JSX에서는 변수를 사용할 때, {} 를 사용한다.
+	3. HTML안에 스타일 지정할 때는 style = {{ 스타일 }}
+	주의 사항
+		- style = { } 안에 { }로 한번 더 감싸서 객체 형태로 작성해야 한다.
+		- key: value 형식 사용
+		- CSS 속성명은 카멜표기법
